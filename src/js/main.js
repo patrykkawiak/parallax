@@ -22,11 +22,11 @@ const parallax = () => {
 		desc.style.transform = `translateX(-${1700 - scrollValue}px)`;
 		img.classList.remove('animation');
 		desc.classList.remove('animation');
-	} else if (scrollValue > 1900){
+	} else if (scrollValue > 2000){
 		img.classList.add('animation');
 		desc.classList.add('animation');
 
-        
+
 	}
 };
 
