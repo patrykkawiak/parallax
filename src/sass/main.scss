@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 1000vh;
+}
+
+.parallax-section {
+	width: 100%;
+	position: fixed;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10rem;
+
+	h2 {
+		font-size: 4rem;
+		text-transform: uppercase;
+	}
+
+	.first {
+		transform: translateX(var(--a));
+	}
+	.second {
+		transform: translateX(var(--b));
+	}
+
+	.content {
+		display: none;
+		align-items: center;
+		gap: 2rem;
+		padding: 5rem;
+
+		img {
+			width: 40%;
+			transform: translateX(1000px);
+		}
+		.desc {
+			width: 50%;
+		}
+	}
+	.flex {
+		display: flex;
+	}
+	.none {
+		display: none;
+	}
+
+	.animation {
+		animation: hide .3s forwards;
+	}
+}
+
+@keyframes hide {
+	from {
+		opacity: 1;
+	} 
+	to {
+		opacity: 0;
+		display: none;
+	}
+
+}
+
+
